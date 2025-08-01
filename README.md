@@ -2,7 +2,7 @@
 
 > **Smart Financial Planning Made Simple**
 
-A modern, responsive financial calculator that helps you analyze investment strategies and make informed decisions for your wealth-building journey. Built with React, Vite, and Tailwind CSS.
+A modern, responsive financial calculator that helps you analyze investment strategies and make informed decisions for your wealth-building journey. 
 
 ## 🌐 Live Demo
 

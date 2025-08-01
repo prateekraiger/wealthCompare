@@ -54,13 +54,15 @@ const ChartsSection = ({ loanData, sipData, isLoading }) => {
         display: false,
       },
       tooltip: {
-        backgroundColor: isDark ? "#1f2937" : "#ffffff",
-        titleColor: isDark ? "#ffffff" : "#374151",
-        bodyColor: isDark ? "#d1d5db" : "#6b7280",
-        borderColor: isDark ? "#374151" : "#e5e7eb",
-        borderWidth: 1,
-        cornerRadius: 8,
+        backgroundColor: isDark ? "#0f172a" : "#ffffff",
+        titleColor: isDark ? "#f8fafc" : "#374151",
+        bodyColor: isDark ? "#cbd5e1" : "#6b7280",
+        borderColor: isDark ? "#3c6e71" : "#e5e7eb",
+        borderWidth: 2,
+        cornerRadius: 12,
         displayColors: false,
+        padding: 12,
+        boxPadding: 6,
         callbacks: {
           label: function (context) {
             const value = context.parsed.y;
@@ -72,25 +74,27 @@ const ChartsSection = ({ loanData, sipData, isLoading }) => {
     scales: {
       x: {
         grid: {
-          color: isDark ? "#374151" : "#e5e7eb",
-          borderColor: isDark ? "#4b5563" : "#d1d5db",
+          color: isDark ? "#334155" : "#e5e7eb",
+          borderColor: isDark ? "#475569" : "#d1d5db",
         },
         ticks: {
-          color: isDark ? "#9ca3af" : "#6b7280",
+          color: isDark ? "#cbd5e1" : "#6b7280",
           font: {
             size: 11,
+            family: "'Inter', sans-serif",
           },
         },
       },
       y: {
         grid: {
-          color: isDark ? "#374151" : "#e5e7eb",
-          borderColor: isDark ? "#4b5563" : "#d1d5db",
+          color: isDark ? "#334155" : "#e5e7eb",
+          borderColor: isDark ? "#475569" : "#d1d5db",
         },
         ticks: {
-          color: isDark ? "#9ca3af" : "#6b7280",
+          color: isDark ? "#cbd5e1" : "#6b7280",
           font: {
             size: 11,
+            family: "'Inter', sans-serif",
           },
           callback: function (value) {
             return `₹${(value / 100000).toFixed(0)}L`;
@@ -104,7 +108,7 @@ const ChartsSection = ({ loanData, sipData, isLoading }) => {
       },
       point: {
         radius: 0,
-        hoverRadius: 6,
+        hoverRadius: 0,
       },
     },
     interaction: {
@@ -169,11 +173,11 @@ const ChartsSection = ({ loanData, sipData, isLoading }) => {
   ];
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
       {charts.map((chart, index) => (
         <div
           key={index}
-          className="theme-card-bg backdrop-blur-sm rounded-xl border-2 theme-border p-6 hover:shadow-xl hover:scale-[1.02] transition-all duration-300 shadow-lg cursor-pointer"
+          className="theme-card-bg backdrop-blur-sm rounded-xl border-2 theme-border p-4 sm:p-6 lg:p-8 shadow-lg"
         >
           <div className="mb-4">
             <h3 className="text-lg font-semibold theme-text-primary mb-1">

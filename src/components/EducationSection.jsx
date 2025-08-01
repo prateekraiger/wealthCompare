@@ -82,7 +82,7 @@ const EducationSection = () => {
   ];
 
   return (
-    <div className="theme-card-bg backdrop-blur-md rounded-xl sm:rounded-2xl border-2 p-4 sm:p-6 md:p-8 shadow-xl transition-all duration-300">
+    <div className="theme-card-bg backdrop-blur-md rounded-xl sm:rounded-2xl border-2 p-4 sm:p-6 md:p-8 lg:p-10 shadow-xl transition-all duration-300">
       {/* Header */}
       <div className="flex items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
         <div className="p-1.5 sm:p-2 bg-gradient-to-br from-[#284b63] to-[#3c6e71] rounded-lg">
@@ -105,7 +105,7 @@ const EducationSection = () => {
           Key Financial Terms
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {financialTerms.map((term, index) => (
             <div
               key={index}

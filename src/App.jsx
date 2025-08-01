@@ -43,16 +43,16 @@ const AppContent = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 min-h-screen">
         <Navbar />
 
-        <main className="pt-16 sm:pt-20">
-          <div className="container mx-auto px-4 py-4 sm:py-6">
-            <header className="text-center mb-6 sm:mb-8">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-[#284b63] via-[#3c6e71] to-[#284b63] bg-clip-text text-transparent transition-all duration-300 animate-pulse tracking-tight text-shadow-enhanced">
+        <main className="pt-16 sm:pt-20 w-full overflow-x-hidden">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 max-w-7xl">
+            <header className="text-center mb-6 sm:mb-8 lg:mb-12">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#284b63] dark:text-white transition-all duration-300 animate-pulse tracking-tight text-shadow-enhanced">
                 Smart Financial Planning
               </h1>
-              <p className="text-sm md:text-base max-w-2xl mx-auto px-4 theme-text-secondary transition-all duration-300 animate-fade-in">
+              <p className="text-sm sm:text-base lg:text-lg max-w-2xl mx-auto px-4 sm:px-0 theme-text-secondary transition-all duration-300 animate-fade-in">
                 Make informed investment decisions with our intelligent
                 financial calculator. Analyze your investment strategies and
                 optimize your wealth-building journey.

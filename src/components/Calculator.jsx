@@ -61,9 +61,9 @@ const Calculator = () => {
   };
 
   return (
-    <div className="space-y-6 sm:space-y-8">
+    <div className="space-y-6 sm:space-y-8 lg:space-y-12">
       {/* Input Section */}
-      <div className="theme-card-bg backdrop-blur-md rounded-xl sm:rounded-2xl border-2 p-4 sm:p-6 md:p-8 shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
+      <div className="theme-card-bg backdrop-blur-md rounded-xl sm:rounded-2xl border-2 p-4 sm:p-6 md:p-8 lg:p-10 shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-[1.005]">
         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
           <div className="p-1.5 sm:p-2 bg-gradient-to-br from-[#284b63] to-[#3c6e71] rounded-lg">
             <CalcIcon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />

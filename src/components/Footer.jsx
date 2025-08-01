@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_35%,rgba(60,110,113,0.1)_50%,transparent_65%)] bg-[length:20px_20px]"></div>
       </div>
 
-      <div className="relative container mx-auto px-4 py-12 lg:py-16">
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 max-w-7xl">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
           {/* Brand Section */}

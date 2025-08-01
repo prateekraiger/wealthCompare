@@ -23,8 +23,8 @@ const getInitialTheme = () => {
     return window.matchMedia("(prefers-color-scheme: dark)").matches;
   }
 
-  // Default to dark mode
-  return true;
+  // Default to light mode
+  return false;
 };
 
 // Helper function to apply theme to DOM
@@ -55,9 +55,9 @@ const applyThemeToDOM = (isDark) => {
 export const ThemeProvider = ({ children }) => {
   // Initialize with a function to avoid hydration mismatch
   const [isDark, setIsDark] = useState(() => {
-    // During SSR, default to dark mode
+    // During SSR, default to light mode
     if (typeof window === "undefined") {
-      return true;
+      return false;
     }
     return getInitialTheme();
   });
